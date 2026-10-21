@@ -1,45 +1,30 @@
-Assistant Rental Application
+# Assistant Rental Application
 
-A lightweight Node.js web application for managing assistant rental services, featuring a clean front-end interface and out-of-the-box Docker support.
+A web application for assistant rental services, built with Node.js and containerized using Docker.
 
-📌 About The Project
+## 📋 Table of Contents
 
-Assistant Rental Application is a full-stack starter solution designed to streamline rental requests and assistant management. It serves a responsive front-end interface via an Express-backed Node.js server, making it easy to deploy either locally or inside a Docker container.
+- [Features](#-features)
+- [Project Structure](#-project-structure)
+- [Prerequisites](#-prerequisites)
+- [Getting Started](#-getting-started)
+  - [Local Setup](#local-setup)
+  - [Docker Setup](#docker-setup)
+- [License](#-license)
 
-Key Highlights
+---
 
-Simple Architecture: Minimal setup required to get up and running quickly.
+## ✨ Features
 
-Production Ready: Includes containerization setup (Dockerfile) for smooth deployment.
+- Lightweight Node.js express server logic (`server.js`)
+- Static front-end assets delivered via `public/index.html`
+- Docker containerization ready out-of-the-box
 
-Extensible: Designed as a clean base that can easily integrate with third-party APIs or databases.
+---
 
-📋 Table of Contents
+## 📁 Project Structure
 
-Features
-
-Project Structure
-
-Prerequisites
-
-Getting Started
-
-Local Setup
-
-Docker Setup
-
-License
-
-✨ Features
-
-Lightweight Node.js express server logic (server.js)
-
-Static front-end assets delivered via public/index.html
-
-Docker containerization ready out-of-the-box
-
-📁 Project Structure
-
+```text
 assistant-rental/
 ├── Dockerfile           # Docker configuration file
 ├── package.json         # Node.js dependencies and scripts
@@ -47,55 +32,60 @@ assistant-rental/
 │   └── index.html       # Front-end HTML interface
 ├── server.js            # Node.js server entry point
 └── README.md            # Project documentation
+```
 
+---
 
-🛠️ Prerequisites
+## 🛠️ Prerequisites
 
 Before running this project, ensure you have the following installed on your local machine:
 
-Node.js (v14.x or higher)
+- **Node.js** (v14.x or higher)
+- **npm** (Node Package Manager)
+- **Docker** *(optional, required only for running in container)*
 
-npm (Node Package Manager)
+---
 
-Docker (optional, required only for running in container)
+## 🚀 Getting Started
 
-🚀 Getting Started
+### Local Setup
 
-Local Setup
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/assistant-rental.git
+   cd assistant-rental
+   ```
 
-Clone the repository:
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-git clone https://github.com/your-username/assistant-rental.git
-cd assistant-rental
+3. **Start the server:**
+   ```bash
+   npm start
+   ```
+   *(or run `node server.js` directly)*
 
+4. Open your browser and navigate to `http://localhost:3000` (or your configured port).
 
-Install dependencies:
+---
 
-npm install
+### Docker Setup
 
+1. **Build the Docker image:**
+   ```bash
+   docker build -t assistant-rental .
+   ```
 
-Start the server:
+2. **Run the container:**
+   ```bash
+   docker run -p 3000:3000 assistant-rental
+   ```
 
-npm start
+3. Access the application at `http://localhost:3000`.
 
-
-(or run node server.js directly)
-
-Open your browser and navigate to http://localhost:3000 (or your configured port).
-
-Docker Setup
-
-Build the Docker image:
-
-docker build -t assistant-rental .
-
-
-Run the container:
-
-docker run -p 3000:3000 assistant-rental
-
-
-Access the application at http://localhost:3000.
+---
 
 📄 License
 
