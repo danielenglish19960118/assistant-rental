@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentRent | 頂尖 AI 助理與專家隨需租賃平台</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- 導覽列 (Navbar) -->
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-indigo-600 text-white p-2 rounded-xl">
+                    <i class="fa-solid fa-robot text-xl"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-gray-900">Talent<span class="text-indigo-600">Rent</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                <a href="#features" class="hover:text-indigo-600 transition">平台特色</a>
+                <a href="#assistants" class="hover:text-indigo-600 transition">熱門助理</a>
+                <a href="#pricing" class="hover:text-indigo-600 transition">彈性資費</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="#assistants" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-xl text-sm font-medium shadow-sm transition">
+                    立即租用
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 頁首主視覺 (Hero Section) -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-indigo-50/50 via-white to-white py-20 lg:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="inline-flex items-center space-x-2 bg-indigo-50 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full mb-6 uppercase tracking-wider">
+                <i class="fa-solid fa-bolt text-indigo-500"></i> 下一代 AI 專家隨需隨用
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight max-w-4xl mx-auto leading-tight">
+                按需租用頂尖 <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">AI 助理與專業人才</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                擺脫繁重的招募成本與長期綁定。無論是全天候客服、精準數據分析還是文案專家，一鍵解鎖您的專屬超級大腦。
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#assistants" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-8 py-4 rounded-xl shadow-lg shadow-indigo-200 transition text-base">
+                    瀏覽可用助理 <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#features" class="bg-white hover:bg-gray-50 text-gray-700 border border-gray-200 font-medium px-8 py-4 rounded-xl transition text-base">
+                    了解運作方式
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 平台優勢 (Features) -->
+    <section id="features" class="py-20 bg-white">
+        為什麼選擇 TalentRent？
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 tracking-tight">為現代企業與創作者打造的智慧勞動力</h2>
+                <p class="mt-4 text-gray-600">我們提供安全、彈性、高效能的數位資產租賃服務，助您業務高速增長。</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">隨租隨用，零等待</h3>
+                    <p class="text-gray-600 leading-relaxed">無須漫長的面試與培訓期，挑選適合的角色後即可透過 API 或專屬介面無縫串接。</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">企業級資安防護</h3>
+                    <p class="text-gray-600 leading-relaxed">嚴格遵循資料隱私規範（GDPR/DSA），確保您的商業機密與對話內容受到最高等級保護。</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">靈活計費方案</h3>
+                    <p class="text-gray-600 leading-relaxed">支援按時計費、按月訂閱或依照任務量計價，讓您的每一分預算發揮最大效益。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 助理展示區 (Assistants Marketplace) -->
+    <section id="assistants" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 tracking-tight">精選熱門助理角色</h2>
+                <p class="mt-4 text-gray-600">挑選您業務所需的專業人才，立即開始租用。</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 角色 1 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
+                    <div class="p-6 bg-gradient-to-br from-indigo-500 to-violet-600 text-white">
+                        <span class="bg-white/20 text-xs font-semibold px-2.5 py-1 rounded-full">客戶服務</span>
+                        <h3 class="text-xl font-bold mt-3">24/7 全能客服專員</h3>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <p class="text-gray-600 text-sm mb-4">精通多國語言，具備高情商與精準問題排解能力，無縫處理深夜客訴與訂單查詢。</p>
+                            <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                                <li><i class="fa-solid fa-check text-indigo-600 mr-2"></i>多語系即時回應</li>
+                                <li><i class="fa-solid fa-check text-indigo-600 mr-2"></i>自動對接 ERP / CRM</li>
+                            </ul>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">$15</span>
+                                <span class="text-xs text-gray-500">/ 小時</span>
+                            </div>
+                            <button onclick="alert('感謝您的測試！租賃功能即將上線。')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-xl text-sm font-medium transition">
+                                立即租用
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 角色 2 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
+                    <div class="p-6 bg-gradient-to-br from-blue-500 to-indigo-600 text-white">
+                        <span class="bg-white/20 text-xs font-semibold px-2.5 py-1 rounded-full">數據分析</span>
+                        <h3 class="text-xl font-bold mt-3">商業智能數據分析師</h3>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <p class="text-gray-600 text-sm mb-4">專精財報分析、市場趨勢洞察與商業策略建議，快速將雜亂數據轉化為決策圖表。</p>
+                            <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                                <li><i class="fa-solid fa-check text-indigo-600 mr-2"></i>自動化圖表生成</li>
+                                <li><i class="fa-solid fa-check text-indigo-600 mr-2"></i>投資報酬率 (ROI) 建模</li>
+                            </ul>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">$25</span>
+                                <span class="text-xs text-gray-500">/ 小時</span>
+                            </div>
+                            <button onclick="alert('感謝您的測試！租賃功能即將上線。')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-xl text-sm font-medium transition">
+                                立即租用
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 角色 3 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
+                    <div class="p-6 bg-gradient-to-br from-violet-500 to-purple-600 text-white">
+                        <span class="bg-white/20 text-xs font-semibold px-2.5 py-1 rounded-full">行銷文案</span>
+                        <h3 class="text-xl font-bold mt-3">SEO 內容與社群策略師</h3>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <p class="text-gray-600 text-sm mb-4">精通多平台演算法，為您量身打造高點閱率的社群貼文、SEO 文章與吸睛產品文案。</p>
+                            <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                                <li><i class="fa-solid fa-check text-indigo-600 mr-2"></i>高轉換率文案撰寫</li>
+                                <li><i class="fa-solid fa-check text-indigo-600 mr-2"></i>關鍵字與流量優化</li>
+                            </ul>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">$20</span>
+                                <span class="text-xs text-gray-500">/ 小時</span>
+                            </div>
+                            <button onclick="alert('感謝您的測試！租賃功能即將上線。')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-xl text-sm font-medium transition">
+                                立即租用
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 (Footer) -->
+    <footer class="bg-white border-t border-gray-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-sm text-gray-500">
+            <div class="flex items-center space-x-2 mb-4 sm:mb-0">
+                <i class="fa-solid fa-robot text-indigo-600 text-lg"></i>
+                <span class="font-bold text-gray-900">TalentRent</span> &copy; 2026. All rights reserved.
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-indigo-600 transition">隱私權政策</a>
+                <a href="#" class="hover:text-indigo-600 transition">服務條款</a>
+                <a href="#" class="hover:text-indigo-600 transition">聯絡支援</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
